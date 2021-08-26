@@ -1,0 +1,14 @@
+.pageBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding-top: 20vh;
+  margin-left: 250px;
+}
+
+.h1 {
+  text-align: center;
+  padding-top: 2vh;
+  padding-right: 2vh;
+}

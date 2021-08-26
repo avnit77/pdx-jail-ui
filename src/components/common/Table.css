@@ -1,0 +1,24 @@
+.Table {
+    thead {
+      background-color: rgb(181,199,211);
+      text-align: left;
+    }
+      
+    th {
+      padding: .75em 1em .5em 0;
+    }
+
+    tbody {
+      text-align: left;
+      margin: auto;
+    }
+
+    tr {
+      border: 2px solid black;
+    }
+
+    td {
+      font-size: 1em;
+      font-family: Roboto;
+    }
+}
