@@ -1,12 +1,13 @@
 
 .navContainer {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   flex-wrap: wrap;
   width: 50%;
   padding: 10px;
   padding-right: 15px;
   line-height: 5rem;
+  height: fit-content;
 }
 
 .SideBar {

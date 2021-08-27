@@ -10,7 +10,7 @@ import DeveloperPage from './components/DeveloperPage/DeveloperPage';
 import Header from './components/common/Header';
 import SideBar from './components/common/SideBar';
 
-export default function App() {
+const App = () => {
   return (
     <>
       <Router>
@@ -24,3 +24,5 @@ export default function App() {
     </>
   );
 }
+
+export default App

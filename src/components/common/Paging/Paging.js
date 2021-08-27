@@ -1,6 +1,5 @@
 import React from 'react';
 import usePaging from '../../../hooks/use-paging';
-// import styles from './Paging.css';
 
 const Paging = () => {
   const { page, prevPage, nextPage } = usePaging();
