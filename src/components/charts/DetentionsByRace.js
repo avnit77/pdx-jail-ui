@@ -18,13 +18,21 @@ const DetentionsByRaceChart = () => {
   useEffect(() => {
     getCountByRace()
       .then(res => {
-        setUnknownCount(res[0].count), 
-        setBlackCount(res[1].count),
-        setHispanicCount(res[2].count),
-        setPacificCount(res[3].count),
-        setAsianCount(res[4].count),
-        setWhiteCount(res[5].count),
-        setNativeAmericanCount(res[6].count);
+        if(res[0]){
+          setUnknownCount(res[0].count) 
+        } if(res[1]){
+          setBlackCount(res[1].count) 
+        } if(res[2]){
+          setHispanicCount(res[2].count)
+        } if(res[3]){
+          setPacificCount(res[3].count) 
+        } if(res[4]){
+          setAsianCount(res[4].count) 
+        } if(res[5]){
+          setWhiteCount(res[5].count) 
+        }if(res[6]){
+          setNativeAmericanCount(res[6].count) 
+        }
       });
   }, []);
 

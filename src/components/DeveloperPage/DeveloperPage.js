@@ -1,73 +1,72 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React from 'react';
-import styles from './DeveloperPage.css';
 
 
 const DeveloperPage = () => {
 
   return (
     <>
-      <main className={styles.DeveloperPage}>
+      <main className="DeveloperPage">
        
         <h1>About MCDC Data</h1>
         <p>MCDC data is a public resource for information regarding detentions in Multnomah County, Oregon.  The data is collected daily from the Multnomah County Detention Center <a href="http://www.mcso.us/PAID/">inmate information page.</a></p>
 
-        <p><span className={styles.notesEmphasis}>NOTE: Our collection of data starts on January 16, 2020.</span></p>
+        <p><span className="notesEmphasis">NOTE: Our collection of data starts on January 16, 2020.</span></p>
 
         <p> The API routes below provide direct access to the data for researchers.</p>
 
-        <p><span className={styles.notesEmphasis}>NOTE: Get ALL routes are paged. Use ?page=[page number] and ?perPage=[records per page]</span></p>
-        <div className={styles.routes}>
+        <p><span className="notesEmphasis">NOTE: Get ALL routes are paged. Use ?page=[page number] and ?perPage=[records per page]</span></p>
+        <div className="routes">
           <h2>Person Routes</h2>
           <ul>
             <li>
-              <span className={styles.routes}>Get ALL persons -
-              </span><a className={styles.paths} href="https://jail-data-pdx.herokuapp.com/api/v1/persons" target="_blank">https://jail-data-pdx.herokuapp.com/api/v1/persons</a>
+              <span className="routes">Get ALL persons -
+              </span><a className="paths" href="https://jail-data-pdx.herokuapp.com/api/v1/persons" target="_blank">https://jail-data-pdx.herokuapp.com/api/v1/persons</a>
             </li>
             <li>
-              <span className={styles.routes}>Query person subsets by keys - </span><a className={styles.paths} href="https://jail-data-pdx.herokuapp.com/api/v1/persons/?race=White" target="_blank">/?race=White</a> or <a className={styles.paths} href="https://jail-data-pdx.herokuapp.com/api/v1/persons/?gender=Male" target="_blank">/?gender=Male</a>
+              <span className="routes">Query person subsets by keys - </span><a className="paths" href="https://jail-data-pdx.herokuapp.com/api/v1/persons/?race=White" target="_blank">/?race=White</a> or <a className="paths" href="https://jail-data-pdx.herokuapp.com/api/v1/persons/?gender=Male" target="_blank">/?gender=Male</a>
             </li>
             <li>
-              <span className={styles.routes}>Get count by RACE - </span><a className={styles.paths} href="https://jail-data-pdx.herokuapp.com/api/v1/persons/countByRace" target="_blank">/countByRace</a>
+              <span className="routes">Get count by RACE - </span><a className="paths" href="https://jail-data-pdx.herokuapp.com/api/v1/persons/countByRace" target="_blank">/countByRace</a>
             </li>
             <li>
-              <span className={styles.routes}>Get count by GENDER - </span><a className={styles.paths} href="https://jail-data-pdx.herokuapp.com/api/v1/persons/countByGender" target="_blank">/countByGender</a>
+              <span className="routes">Get count by GENDER - </span><a className="paths" href="https://jail-data-pdx.herokuapp.com/api/v1/persons/countByGender" target="_blank">/countByGender</a>
             </li>
             <li>
-              <span className={styles.routes}>Get count by AGE - </span><a className={styles.paths} href="https://jail-data-pdx.herokuapp.com/api/v1/persons/countByAgeRange" target="_blank">/countByAgeRange</a>
+              <span className="routes">Get count by AGE - </span><a className="paths" href="https://jail-data-pdx.herokuapp.com/api/v1/persons/countByAgeRange" target="_blank">/countByAgeRange</a>
             </li>
           </ul>
           <h2>Detention Routes</h2>
           <ul>
             <li>
-              <span className={styles.routes}>Get ALL detentions - </span><a className={styles.paths} href="https://jail-data-pdx.herokuapp.com/api/v1/detentions" target="_blank">https://jail-data-pdx.herokuapp.com/api/v1/detentions</a>
+              <span className="routes">Get ALL detentions - </span><a className="paths" href="https://jail-data-pdx.herokuapp.com/api/v1/detentions" target="_blank">https://jail-data-pdx.herokuapp.com/api/v1/detentions</a>
             </li>
             <li>
-              <span className={styles.routes}>Query detention subsets by keys - </span><a className={styles.paths} href="https://jail-data-pdx.herokuapp.com/api/v1/detentions/?arrestingAgency=Gresham+Police+Department" target="_blank">/?arrestingAgency=Gresham+Police+Department</a>
+              <span className="routes">Query detention subsets by keys - </span><a className="paths" href="https://jail-data-pdx.herokuapp.com/api/v1/detentions/?arrestingAgency=Gresham+Police+Department" target="_blank">/?arrestingAgency=Gresham+Police+Department</a>
             </li>
             <li>
-              <span className={styles.routes}>Get count by AGENCY - </span><a className={styles.paths} href="https://jail-data-pdx.herokuapp.com/api/v1/detentions/countByAgency" target="_blank">/countByAgency</a>
+              <span className="routes">Get count by AGENCY - </span><a className="paths" href="https://jail-data-pdx.herokuapp.com/api/v1/detentions/countByAgency" target="_blank">/countByAgency</a>
             </li>
             <li>
-              <span className={styles.routes}>Get count by BOOKING TIME - </span><a className={styles.paths} href="https://jail-data-pdx.herokuapp.com/api/v1/detentions/countByTime" target="_blank">/countByTime</a>
+              <span className="routes">Get count by BOOKING TIME - </span><a className="paths" href="https://jail-data-pdx.herokuapp.com/api/v1/detentions/countByTime" target="_blank">/countByTime</a>
             </li>
             <li>
-              <span className={styles.routes}>Get average detention DURATION - </span><a className={styles.paths} href="https://jail-data-pdx.herokuapp.com/api/v1/detentions/avgDetentionDuration" target="_blank">/avgDetentionDuration</a>
+              <span className="routes">Get average detention DURATION - </span><a className="paths" href="https://jail-data-pdx.herokuapp.com/api/v1/detentions/avgDetentionDuration" target="_blank">/avgDetentionDuration</a>
             </li>
             <li>
-              <span className={styles.routes}>Get average duration by RACE - </span><a className={styles.paths} href="https://jail-data-pdx.herokuapp.com/api/v1/detentions/avgDetentionByRace" target="_blank">/avgDetentionByRace</a>
+              <span className="routes">Get average duration by RACE - </span><a className="paths" href="https://jail-data-pdx.herokuapp.com/api/v1/detentions/avgDetentionByRace" target="_blank">/avgDetentionByRace</a>
             </li>
             <li>
-              <span className={styles.routes}>Get average detention by GENDER - </span><a className={styles.paths} href="https://jail-data-pdx.herokuapp.com/api/v1/detentions/avgDetentionByGender" target="_blank">/avgDetentionByGender</a>
+              <span className="routes">Get average detention by GENDER - </span><a className="paths" href="https://jail-data-pdx.herokuapp.com/api/v1/detentions/avgDetentionByGender" target="_blank">/avgDetentionByGender</a>
             </li>
             <li>
-              <span className={styles.routes}>Get CHARGE count by RACE - </span><a className={styles.paths} href="https://jail-data-pdx.herokuapp.com/api/v1/detentions/countChargesByRace" target="_blank">/countChargesByRace</a>
+              <span className="routes">Get CHARGE count by RACE - </span><a className="paths" href="https://jail-data-pdx.herokuapp.com/api/v1/detentions/countChargesByRace" target="_blank">/countChargesByRace</a>
             </li>
             <li>
-              <span className={styles.routes}>Get charge count by GENDER- </span><a className={styles.paths} href="https://jail-data-pdx.herokuapp.com/api/v1/detentions/countChargesByGender" target="_blank">/countChargesByGender</a>
+              <span className="routes">Get charge count by GENDER- </span><a className="paths" href="https://jail-data-pdx.herokuapp.com/api/v1/detentions/countChargesByGender" target="_blank">/countChargesByGender</a>
             </li>
             <li>
-              <span className={styles.routes}>Get ALL court cases - </span><a className={styles.paths} href="https://jail-data-pdx.herokuapp.com/api/v1/courtCases" target="_blank">https://jail-data-pdx.herokuapp.com/api/v1/courtCases</a>
+              <span className="routes">Get ALL court cases - </span><a className="paths" href="https://jail-data-pdx.herokuapp.com/api/v1/courtCases" target="_blank">https://jail-data-pdx.herokuapp.com/api/v1/courtCases</a>
             </li>
           </ul>
         </div>

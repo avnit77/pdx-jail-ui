@@ -1,0 +1,143 @@
+p,
+button
+label {
+    font-family: 'Lora', sans-serif;
+    letter-spacing: 1px;
+}
+
+p {
+    letter-spacing: 0;
+}
+
+input,
+tr,
+h6,
+strong,
+span,
+.tr,
+h7
+{
+    font-family: 'Work Sans', sans-serif;
+}
+
+tr {
+    font-weight: 500;
+}
+
+
+h3,
+h4,
+h5,
+th,
+.th
+ {
+    font-family: 'Work Sans', sans-serif;
+    letter-spacing: 1px;
+
+}
+
+h1,
+h2, 
+.title {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3px;
+    font-weight: 300;
+}
+
+.title {
+    color: rgba(255, 255, 255, 0.707);
+}
+
+th,
+tr, 
+.tr,
+.th {
+    font-size: 14px;
+}
+
+.table {
+    background-color: rgba(255, 255, 255, 0.87);
+    border-radius: 6px;
+    margin-bottom: 0 !important;
+}
+
+.hidden {
+    display: none;
+}
+
+.title {
+    margin-bottom: .0% !important;
+}
+
+.pageContent {
+    height: 100vh;
+    width: 100%;
+}
+
+.button {
+    &.is-inverted {
+        color: $blue !important;
+        border-color: $blue !important;
+        margin-top: 5px;
+        &:hover{
+            background-color: $blue-grey;
+        }
+    }
+    &.is-small {
+        height: 25px;
+    }
+}
+.box {
+    margin: 2%;
+}
+
+.spinnerContainer {
+    // color: $blue-grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .bodyContainer {
+    margin-left: 250px;
+  }

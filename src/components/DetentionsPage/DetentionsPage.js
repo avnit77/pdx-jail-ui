@@ -5,9 +5,6 @@ import useDetention from '../../hooks/useDetention';
 import DetentionRow from './DetentionRow';
 import Paging from '../common/Paging/Paging';
 import DetailsModal from './DetailsModal';
-import styles from './DetentionsPage.css';
-import tableStyles from '../common/Table.css';
-import formStyles from '../common/Form.css';
 import { useDetailsModal } from '../../hooks/useDetailsModal';
 
 const DetentionsPage = () => {
@@ -23,11 +20,11 @@ const DetentionsPage = () => {
     history.push(`/detentions?${newSearchParams}`);
   };
   return (
-    <main className={styles.pageBody}>
+    <main className="pageBody">
       <h1>Search all Detentions by Arresting Agency</h1>
-      <div className={formStyles.QueryControls}>
+      <div className="QueryControls">
         Arresting Agency:
-        <select className={formStyles.dropdown} onChange={({ target }) => setArrestingAgency(target.value)}>
+        <select className="dropdown" onChange={({ target }) => setArrestingAgency(target.value)}>
           <option value="">Any</option>
           <option value="Beaverton Police">Beaverton Police</option>
           <option value="Multnomah County Sheriff Booking">Multnomah County Sheriff Booking</option>
@@ -54,7 +51,7 @@ const DetentionsPage = () => {
         </select>
       </div>
       <button onClick={handleClick}>Search</button>
-      <table className={tableStyles.Table}>
+      <table className="Table">
         <thead>
           <tr>
             <th><h4>Booking Number</h4></th>
