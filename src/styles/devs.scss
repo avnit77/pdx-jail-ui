@@ -1,20 +1,37 @@
 .DeveloperPage {
     margin: auto;
-    padding-left: 2vw;
-    padding-top: 20vh;
-    padding-bottom: 5vh;
+    padding: 25vh 5vw 5vh 5vw;
     margin-left: 250px;
-    margin-right: 10vw;
+    margin-right: 10%;
+    margin: auto;
+    padding: 25vh 5vw 5vh 9vw;
+    margin-left: 250px;
+    margin-right: 5rem;
+    a {
+       font-family: 'Lora', sans-serif;
+       color: black;
+       &:hover {
+          text-decoration: underline;
+       }
+    }
+    h1{
+       text-align: end;
+    }
 
 
 .notesEmphasis {
-   padding-top: 2.5rem;
    font-style: italic;
 }
 
 .routes {
-   padding: 5px;
    font-weight: bold;
+   h3 {
+      margin: .5em;
+   }
+   ul {
+      margin-bottom: .5em;
+   }
+
   
 }
 
@@ -34,6 +51,9 @@ p {
    text-justify: inter-word;
    line-height: 1.3;
    margin: 1em;
+   &.is-size-7 {
+      text-align: center;
+   }
 }
 
 #container {

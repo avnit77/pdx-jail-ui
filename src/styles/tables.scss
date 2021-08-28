@@ -1,21 +1,48 @@
+.Table {
+  width: 100%;
+  thead {
+    background-color: rgb(181,199,211);
+    text-align: left;
+  }
+    
+  th {
+    padding: .75em 1em .5em 0;
+  }
+
+  tbody {
+    text-align: left;
+    margin: auto;
+  }
+
+  tr {
+    border: 2px solid black;
+  }
+
+  td {
+    font-size: 1em;
+  //   font-family: Roboto;
+  }
+}
+
+.controlsContainer {
+  width: 90%;
+  padding: 1em;
+  position: relative;
+}
+.button {
+  position: relative;
+}
+
 .QueryControls{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center;
     flex-wrap: wrap;
-    padding: 1em;
-    width: 90%;
     text-align: center;
-    margin-left: 5%;
-    font-size: 1.5em;
 
 
     input {
-      height: 30px;
       width: 50px;
     }
   }
 
-  .dropdown {
-    height: 3vh;
-  }
