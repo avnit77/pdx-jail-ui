@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Chart } from 'react-google-charts';
+import Chart from '../elem/Chart';
 
 const getCountByRace = () => {
   return fetch('https://jail-data-pdx.herokuapp.com/api/v1/persons/countByRace')
@@ -38,26 +38,19 @@ const DetentionsByRaceChart = () => {
 
   return (
     <>
-      <h1>Detentions by Race in Multnomah County</h1><br/>
+
       <Chart
-        width={'800px'}
-        height={'400px'}
         chartType="PieChart"
-        loader={<div>Loading Chart</div>}
-        data={[
-          ['Race', 'Arrests'],
-          ['Unknown', unknownCount],
-          ['Black', blackCount],
-          ['Hispanic', hispanicCount],
-          ['Pacific', pacificCount],
-          ['Asian', asianCount],
-          ['White', whiteCount],
-          ['Native American', nativeAmericanCount],
-        ]}
-        options={{
-          is3D: true,
-          colors: ['#058F7A', '#9161A2', '#13646A', '#1F4763', '#A2506A', '#56809A']
-        }}
+        header="Detentions by Race in Multnomah County"
+        titles={['Race', 'Arrests']}
+        chartData={[['Unknown', unknownCount],
+        ['Black', blackCount],
+        ['Hispanic', hispanicCount],
+        ['Pacific', pacificCount],
+        ['Asian', asianCount],
+        ['White', whiteCount],
+        ['Native American', nativeAmericanCount]]}
+ 
       />
     </>
   );
