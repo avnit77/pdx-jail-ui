@@ -1,10 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import tableStyles from '../common/Table.css';
+import React from "react";
+import PropTypes from "prop-types";
 
 const PersonRow = ({ person }) => {
   return (
-    <tr className={tableStyles.Table}>
+    <tr className="Table">
       <td>{person.gender}</td>
       <td>{person.race}</td>
       <td>{person.age}</td>
@@ -15,7 +14,7 @@ const PersonRow = ({ person }) => {
 };
 
 PersonRow.propTypes = {
-  person: PropTypes.object.isRequired
+  person: PropTypes.object.isRequired,
 };
 
 export default PersonRow;

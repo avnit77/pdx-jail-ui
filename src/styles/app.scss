@@ -1,8 +1,9 @@
 p,
-button
-label {
+label,
+button,
+h5 {
     font-family: 'Lora', sans-serif;
-    letter-spacing: 1px;
+    // letter-spacing: 1px;
 }
 
 p {
@@ -10,24 +11,24 @@ p {
 }
 
 input,
+
 tr,
 h6,
 strong,
-span,
 .tr,
+h4,
 h7
 {
-    font-family: 'Work Sans', sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 
 tr {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 
 h3,
-h4,
-h5,
+span,
 th,
 .th
  {
@@ -44,9 +45,6 @@ h2,
     font-weight: 300;
 }
 
-.title {
-    color: rgba(255, 255, 255, 0.707);
-}
 
 th,
 tr, 
@@ -75,16 +73,10 @@ tr,
 }
 
 .button {
-    &.is-inverted {
-        color: $blue !important;
-        border-color: $blue !important;
-        margin-top: 5px;
-        &:hover{
-            background-color: $blue-grey;
-        }
-    }
     &.is-small {
-        height: 25px;
+        height: 30px;
+        font-weight: 600;
+        font-size: .85rem !important;
     }
 }
 .box {
@@ -141,3 +133,6 @@ tr,
   .bodyContainer {
     margin-left: 250px;
   }
+.smallSection {
+  padding: 1em 2em;
+}
