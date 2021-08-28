@@ -1,6 +1,6 @@
 import React from "react";
 // import PropTypes from 'prop-types';
-import DynamicDataDisplay from "../HomePage/DynamicDataDisplay";
+import DynamicDataDisplay from "./DynamicDataDisplay";
 import useAverageDetention from "../../hooks/useAverageDetention";
 
 const Header = () => {

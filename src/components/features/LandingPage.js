@@ -1,5 +1,5 @@
 import React from 'react';
-import Charts from '../charts/ChartContainer';
+import Charts from '../elem/Charts/ChartContainer';
 
 const HomePage = () => {
 

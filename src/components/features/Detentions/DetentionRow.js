@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 
 const DetentionRow = ({
   detention,
@@ -29,12 +28,6 @@ const DetentionRow = ({
       </td>
     </tr>
   );
-};
-
-DetentionRow.propTypes = {
-  detention: PropTypes.object.isRequired,
-  fetchSelectedDetention: PropTypes.func.isRequired,
-  toggleDetailsModal: PropTypes.func.isRequired,
 };
 
 export default DetentionRow;

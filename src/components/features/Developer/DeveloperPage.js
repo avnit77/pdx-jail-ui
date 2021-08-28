@@ -16,11 +16,9 @@ const DeveloperPage = () => {
 
         <section className="smallSection">
 
-        <p>
-          <span className="notesEmphasis">
+        <p className="notesEmphasis">
             Get ALL routes are paged. Use ?page=[page number] and
             ?perPage=[records per page]
-          </span>
         </p>
         <div className="routes">
           <h3 className="is-size-5">Person Routes</h3>
@@ -190,12 +188,10 @@ const DeveloperPage = () => {
           </ul>
         </div>
         </section>
-        <p>
-          <span className="notesEmphasis">
+        <p className="notesEmphasis" style={{"textAlign": "center"}}>
             PLEASE NOTE: While this project was originally developed in January of
             2020, collection of data for the current version began on August 26,
             2021.
-          </span>
         </p>
         <p className="is-size-7">
           Originally developed by{" "}

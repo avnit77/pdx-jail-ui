@@ -9,7 +9,7 @@ const DetailsModal = ({ detention, showDetailsModal, toggleDetailsModal }) => {
         <div className="modal-content">
           <div className="box ">
             <div className="categoryDetails">
-              <h3>Demographic info:</h3>
+              <h3>Demographic info</h3>
               <ul>
                 <li>
                   <span className="key">Gender: </span>
@@ -34,7 +34,7 @@ const DetailsModal = ({ detention, showDetailsModal, toggleDetailsModal }) => {
               </ul>
             </div>
             <div className="categoryDetails">
-              <h3>Booking info:</h3>
+              <h3>Booking info</h3>
               <ul>
                 <li>
                   <span className="key">Booking Number: </span>
@@ -59,7 +59,7 @@ const DetailsModal = ({ detention, showDetailsModal, toggleDetailsModal }) => {
               </ul>
             </div>
             <div className="categoryDetails">
-              <h3>Charges:</h3>
+              <h3>Charges</h3>
               {detention.currentCaseState &&
                 detention.currentCaseState.charges.map((charge) => {
                   return (

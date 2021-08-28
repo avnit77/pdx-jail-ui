@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
-import usePersons from "../../hooks/usePersons";
+import usePersons from "../../../hooks/usePersons";
 import PersonRow from "./PersonRow";
-import Paging from "../common/Paging/Paging";
+import Paging from "../../elem/Paging";
 
 const PersonsPage = () => {
   const [minAge, setMinAge] = useState(0);

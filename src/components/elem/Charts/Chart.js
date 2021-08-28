@@ -1,6 +1,6 @@
 import React from "react";
 import { Chart as Template } from "react-google-charts";
-import LoadingSpinner from "./LoadingSpinner";
+import LoadingSpinner from "../LoadingSpinner";
 
 const Chart = ({ chartType, titles, chartData, header }) => {
   const chartTitles = titles ? titles : ["", ""];
@@ -8,7 +8,6 @@ const Chart = ({ chartType, titles, chartData, header }) => {
     colors: ["#058F7A", "#9161A2", "#13646A", "#1F4763", "#A2506A", "#56809A"],
     axisTitlesPosition: "in",
     hAxis: { textPosition: "in" },
-    // vAxis: { textPosition: "in" },
     chartArea: { width: "90%", height: "90%" },
     ...(chartType === "PieChart" && {
       is3D: true,
@@ -19,8 +18,8 @@ const Chart = ({ chartType, titles, chartData, header }) => {
       axisTitlesPosition: "in",
     }),
     ...(chartType === "LineChart" && {
-      vAxis: { viewWindow: { min: 0 } },
       legend: { position: "none" },
+      vAxis: { textPosition: "in" }
     }),
   };
 
