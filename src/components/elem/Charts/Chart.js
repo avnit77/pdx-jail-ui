@@ -33,8 +33,8 @@ const Chart = ({ chartType, titles, chartData, header }) => {
           <h5 className="is-size-5">{header}</h5>
           <br />
           <Template
-            width={"600px"}
-            height={"300px"}
+            width={"50vw"}
+            height={"40vh"}
             theme={"maximized"}
             loader={<LoadingSpinner size="3em" />}
             chartType={chartType ? chartType : "LineChart"}
