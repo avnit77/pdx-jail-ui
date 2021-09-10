@@ -1,5 +1,4 @@
 import React from "react";
-// import PropTypes from 'prop-types';
 import DynamicDataDisplay from "./DynamicDataDisplay";
 import useAverageDetention from "../../hooks/useAverageDetention";
 
