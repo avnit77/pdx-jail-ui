@@ -1,0 +1,57 @@
+.Table {
+  width: 100%;
+  thead {
+    background-color: rgb(181,199,211);
+    text-align: left;
+  }
+    
+  th {
+    padding: .75em 1em .5em 0;
+  }
+
+  tbody {
+    text-align: left;
+    margin: auto;
+  }
+
+  tr {
+    border: 2px solid black;
+  }
+
+  td {
+    font-size: 1em;
+  //   font-family: Roboto;
+  }
+}
+
+.controlsContainer {
+  width: 90%;
+  padding: 1em;
+  position: relative;
+}
+.button {
+  position: relative;
+}
+
+.QueryControls{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+
+
+    input {
+      width: 50px;
+    }
+  }
+
+.pagination {
+  
+  width: 10%;
+  position: relative;
+  left: 45%;
+  strong{
+    cursor: pointer;
+  }
+}

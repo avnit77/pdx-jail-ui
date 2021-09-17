@@ -1,0 +1,38 @@
+
+.navContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 10px;
+    padding-right: 15px;
+    line-height: 5rem;
+  }
+  
+  .SideBar {
+    position: fixed;
+    margin: 0;
+    top: 20vh;
+    width: 250px;
+    float: left;
+    height: 150vh;
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3px;
+    font-weight: 300;
+    background-color: slategray;
+    a {
+      color: #eef9fe;
+      text-decoration: none;
+      padding: 0px .5rem;
+      &:hover {
+        color: #B9D1D3;
+        border-color: #B9D1D3;
+      }
+    }
+    
+    .active {
+      border: 1px solid $light-blue;
+    }
+  }
+  

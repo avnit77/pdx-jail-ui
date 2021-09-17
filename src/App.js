@@ -1,26 +1,33 @@
-import React from 'react';
-import {
-  BrowserRouter as Router,
-  Route
-} from 'react-router-dom';
-import HomePage from './components/HomePage/HomePage';
-import PersonsPage from './components/PersonsPage/PersonsPage';
-import DetentionsPage from './components/DetentionsPage/DetentionsPage';
-import DeveloperPage from './components/DeveloperPage/DeveloperPage';
-import Header from './components/common/Header';
-import SideBar from './components/common/SideBar';
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import HomePage from "./components/features/LandingPage";
+import PersonsPage from "./components/features/Persons/PersonsPage";
+import DetentionsPage from "./components/features/Detentions/DetentionsPage";
+import DeveloperPage from "./components/features/Developer/DeveloperPage";
+import Header from "./components/elem/Header";
+import SideBar from "./components/elem/SideBar";
+import PopulationContextProvider from "./components/wrappers/PopulationContext";
 
-export default function App() {
+const App = () => {
+  //to do: add parameter context wrapper
   return (
     <>
-      <Router>
-        <Header />
-        <SideBar />
-        <Route exact path='/' component={HomePage} />
-        <Route path='/persons' component={PersonsPage} />
-        <Route path='/detentions' component={DetentionsPage} />
-        <Route path='/developers' component={DeveloperPage} />
-      </Router>
+      <Header />
+      <SideBar />
+      <div className="pageBody">
+        <Router>
+          <Switch>
+            <PopulationContextProvider>
+              <Route exact path="/" component={HomePage} />
+            </PopulationContextProvider>
+            <Route path="/persons" component={PersonsPage} />
+            <Route path="/detentions" component={DetentionsPage} />
+            <Route path="/developers" component={DeveloperPage} />
+          </Switch>
+        </Router>
+      </div>
     </>
   );
-}
+};
+
+export default App;

@@ -1,0 +1,91 @@
+.modal-content{
+    width: fit-content;
+min-width: fit-content;
+&::-webkit-scrollbar {
+    display: none;
+  }
+  
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+
+.box {
+    border-radius: 3px;
+    font-size: 15px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    max-height: 90vh;
+    flex-wrap: wrap;
+    width: 75vw;
+    padding-right: 0em;
+    margin-right: 19px;
+    
+
+    .categoryDetails {
+        padding: .5em 1em .5em 1em;
+        width: 35vw;
+    }
+
+    .key {
+        font-weight: bolder;
+    }
+
+    h3 {
+        width: 100%;
+        background-color: rgb(182,199,211);
+        padding: .25em 0 .25em .25em;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    ul {
+        padding: .25em 0 .25em 0;
+    }
+
+}
+
+
+    // .modalShow{
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    //     color:black;
+    //     opacity: 1;
+    //     height: fit-content;
+    // }
+
+    // .modalHeader {
+    //     background: transparent;
+    // }
+
+    // .modalHide {
+    //     opacity: 0;
+    //     pointer-events: none;
+    // }
+
+    .bookingDetails {
+        border: 2px solid black
+    }
+
+    .demographicDetails {
+        border: 2px solid black
+    }
+
+    .chargeDetails {
+        border: 2px solid black
+    }
+
+    .pageBody {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        padding-top: 20vh;
+        margin-left: 250px;
+        h1 {
+          padding-top: 2vh;
+          padding-right: 2vh;
+        }
+      }
+
