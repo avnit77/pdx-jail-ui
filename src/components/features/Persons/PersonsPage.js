@@ -20,6 +20,7 @@ const PersonsPage = () => {
     history.push(`/persons?${newSearchParams}`);
   };
 
+  //to do: reusable table component, add more table functionality, improve styling
   return (
     <main className="pageBody">
       <section className="section">

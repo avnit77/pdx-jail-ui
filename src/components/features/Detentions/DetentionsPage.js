@@ -19,12 +19,14 @@ const DetentionsPage = () => {
   } = useDetention();
   const { agencies } = useContext(PopulationContext);
 
-
   const handleClick = () => {
     const newSearchParams = new URLSearchParams();
     arrestingAgency && newSearchParams.set("arrestingAgency", arrestingAgency);
     history.push(`/detentions?${newSearchParams}`);
   };
+
+  //to do: reusable table component, more table functionality, improve styling
+
   return (
     <main className="pageBody">
       <section className="section">

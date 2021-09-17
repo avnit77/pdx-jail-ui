@@ -17,7 +17,7 @@ const PopulationContextProvider = ({ config, children }) => {
   const { API_URL } = config;
 
   useEffect(() => {
-    setLoading(true); // set the loading to true
+    setLoading(true); 
     fetch(`${API_URL}persons/countByGender`)
       .then(async (response) => {
         if (response.ok) {
@@ -47,7 +47,7 @@ const PopulationContextProvider = ({ config, children }) => {
   }, [API_URL]);
 
   useEffect(() => {
-    setLoading(true); // set the loading to true
+    setLoading(true); 
     fetch(`${API_URL}detentions/countByAgency`)
       .then(async (response) => {
         if (response.ok) {
@@ -77,7 +77,7 @@ const PopulationContextProvider = ({ config, children }) => {
   }, [API_URL]);
 
   useEffect(() => {
-    setLoading(true); // set the loading to true
+    setLoading(true); 
     fetch(`${API_URL}dailyCounts`)
       .then(async (response) => {
         if (response.ok) {
@@ -108,7 +108,7 @@ const PopulationContextProvider = ({ config, children }) => {
   }, [API_URL]);
 
   useEffect(() => {
-    setLoading(true); // set the loading to true
+    setLoading(true); 
     fetch(`${API_URL}persons/countByRace`)
       .then(async (response) => {
         if (response.ok) {
