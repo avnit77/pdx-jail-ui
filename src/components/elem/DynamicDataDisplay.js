@@ -4,23 +4,19 @@ import LoadingSpinner from "./LoadingSpinner";
 
 const DynamicDataDisplay = ({ children, hook }) => {
   const { data } = hook();
-  if (data === 0)
-    return (
-      <div className="DynamicDataDisplay">
-        <h3>{children}</h3>
-        <div className="dataSection">
-          <LoadingSpinner />
-        </div>
-      </div>
-    );
+
   return (
     <div className="DynamicDataDisplay">
       <h3>{children}</h3>
       <div className="dataSection">
-        <p>
-          {data.toFixed(1)}
-          <span> Days</span>
-        </p>
+        {data === 0 ? (
+          <LoadingSpinner />
+        ) : (
+          <p>
+            {data.toFixed(1)}
+            <span> Days</span>
+          </p>
+        )}
       </div>
     </div>
   );
