@@ -1,11 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import HomePage from "./components/features/LandingPage";
-import PersonsPage from "./components/features/Persons/PersonsPage";
-import DetentionsPage from "./components/features/Detentions/DetentionsPage";
 import DeveloperPage from "./components/features/Developer/DeveloperPage";
+
+import DataPanel from "./components/features/DataPanel";
 import Header from "./components/elem/Header";
 import SideBar from "./components/elem/SideBar";
+import TableContextProvider from "./components/wrappers/TableContext";
 import PopulationContextProvider from "./components/wrappers/PopulationContext";
 
 const App = () => {
@@ -13,19 +14,20 @@ const App = () => {
   return (
     <>
       <Header />
-      <SideBar />
-      <div className="pageBody">
-        <Router>
-          <Switch>
-            <PopulationContextProvider>
-              <Route exact path="/" component={HomePage} />
-            </PopulationContextProvider>
-            <Route path="/persons" component={PersonsPage} />
-            <Route path="/detentions" component={DetentionsPage} />
-            <Route path="/developers" component={DeveloperPage} />
-          </Switch>
-        </Router>
-      </div>
+      <Router>
+        <SideBar />
+        <Switch>
+          <Route path={["/detentions", "/persons"]}>
+            <TableContextProvider>
+              <DataPanel />
+            </TableContextProvider>
+          </Route>
+          <Route path="/developers" component={DeveloperPage} />
+          <PopulationContextProvider>
+            <Route exact path="/" component={HomePage} />
+          </PopulationContextProvider>
+        </Switch>
+      </Router>
     </>
   );
 };
