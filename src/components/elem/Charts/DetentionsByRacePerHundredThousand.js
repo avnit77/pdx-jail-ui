@@ -6,7 +6,7 @@ const DetentionsByRacePreHundredThousandChart = ({ population }) => {
     <>
       <Chart
         chartType="ColumnChart"
-        header="Detentions Per Capita in Multnomah County"
+        header="Detentions By Race Per Capita in Multnomah County"
         titles={["Race", ""]}
         chartData={[
           ["Black", (population.Black / 48925) * 100000],
